@@ -1,12 +1,21 @@
+# Never commit actual customer files or secrets
 .env
 .env.*
 !.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.log
 __pycache__/
 *.py[cod]
 .DS_Store
 .venv/
 venv/
-data/*.csv
-!data/example.csv
 backups/
-*.log
+data/*.csv
+!data/manufacturers.csv
+!data/example.csv
+exports/
